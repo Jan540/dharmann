@@ -7,9 +7,7 @@
 
 {#each data.posts as post}
 	<div>
-		<p>
-			<a href={post.slug}>{post.title}</a>
-		</p>
+		<b>{post.title}</b>
 
 		<p>{formatDate(post.date)}</p>
 	</div>

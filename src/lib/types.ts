@@ -9,5 +9,7 @@ export type Post = {
 
 export type MdsvexFile = {
 	default: SvelteComponent;
-	metadata: Record<string, string>;
+	metadata: Omit<Post, 'slug'>;
 };
+
+export type MdsvexResolver = () => Promise<MdsvexFile>;

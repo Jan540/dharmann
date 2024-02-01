@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+POTENTIAL THEMES
+https://www.realtimecolors.com/blog-post?colors=f8f2ec-161008-d7ba93-2b6973-605cc1&fonts=Popp-Poppins
+*/
+
+@layer base {
+	:root {
+		--text: #130d07;
+		--background: #f7f1e9;
+		--primary: #6c4e28;
+		--secondary: #8ccbd4;
+		--accent: #413ea3;
+	}
+	.dark {
+		--text: #f8f2ec;
+		--background: #161008;
+		--primary: #d7ba93;
+		--secondary: #2b6973;
+		--accent: #605cc1;
+	}
+}

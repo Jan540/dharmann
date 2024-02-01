@@ -19,11 +19,11 @@
 
 <article>
 	<hgroup class="flex flex-col gap-2">
-		<h1 class="text-6xl">{data.frontmatter.title}</h1>
+		<h1 class="text-3xl font-bold">{data.frontmatter.title}</h1>
 		<p class="text-gray-600">Published at {formatDate(data.frontmatter.date)}</p>
 	</hgroup>
 
-	<div class="prose">
+	<div class="prose-custom prose dark:prose-invert">
 		<svelte:component this={component} />
 	</div>
 </article>

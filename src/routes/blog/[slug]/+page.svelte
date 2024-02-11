@@ -18,9 +18,9 @@
 </svelte:head>
 
 <article class="max-w-5xl md:pt-10">
-	<hgroup class="mb-4 flex flex-col gap-3">
+	<hgroup class="mb-14 flex flex-col gap-3">
 		<h1 class="text-5xl font-bold md:text-6xl">{data.frontmatter.title}</h1>
-		<p class="text-muted">Published on {formatDate(data.frontmatter.date)}</p>
+		<p class="text-xl text-muted md:text-2xl">Published on {formatDate(data.frontmatter.date)}</p>
 	</hgroup>
 
 	<div class="prose prose-xl prose-custom min-w-0 md:prose-2xl">

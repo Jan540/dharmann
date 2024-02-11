@@ -2,4 +2,7 @@
 	let counter = 0;
 </script>
 
-<button on:click={() => counter++}>{counter}</button>
+<button
+	class="rounded-lg px-4 py-2 outline-none ring-1 ring-border hover:bg-border"
+	on:click={() => counter++}>{counter}</button
+>

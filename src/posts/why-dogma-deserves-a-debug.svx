@@ -1,0 +1,35 @@
+---
+title: 'Paradigm Police: Why Dogma Deserves a Debug'
+description: This is the description of my cool post.
+date: 2024-01-31
+---
+
+<script lang="ts">
+    import Counter from './components/counter.svelte';
+</script>
+
+Attention, code crusaders and language loyalists! Sheathe your metaphorical swords and extinguish your digital torches, because today we're wading into the often-heated debate of programming paradigms. Buckle up, because we're about to expose the ugly truth: **absolutism is buggy.**
+
+That's right, clinging to one paradigm like it's the sacred elixir of coding is a recipe for disaster (or at least, suboptimal applications). Don't get me wrong, paradigms are powerful tools. OOP boasts its object-oriented prowess, functional programming flaunts its beautiful immutability, and even logic programming has its own brand of declarative charm. But here's the catch: **they're just tools, not deities.**
+
+Imagine a carpenter who only uses a hammer. Sure, they might be able to build a passable chair, but a graceful table? Forget about it. The same goes for coding. Sticking to one paradigm, no matter how comfortable, limits your ability to craft truly elegant and effective solutions.
+
+### Why Paradigms Make for Poor Deities
+
+Let's delve deeper into the pitfalls of paradigm absolutism:
+
+- **Paradigm Blind Spots:** Each paradigm has its own Achilles' heel. OOP struggles with concurrency, functional programming can get verbose, and logic programming, well, let's just say debugging can be a nightmare. By being a paradigm purist, you're ignoring potential solutions right under your nose.
+- **The Problem-Solution Trap:** When you have a hammer, every problem starts to look like a nail. The same goes for paradigms. If you're solely focused on OOP solutions, you might miss the beauty and efficiency of a functional approach. Remember, the best tool for the job isn't always the one you reach for first.
+- **Innovation Stagnation:** Paradigms are great for providing structure, but clinging to them stifles creativity. By being open to different approaches, you unlock new ways of thinking and problem-solving, leading to more innovative and efficient code.
+
+### The Path to Programming Enlightenment: Embrace the Polyglot Way
+
+So, what's the alternative to blind allegiance? **Become a programming polyglot!** Learn the strengths and weaknesses of different paradigms, and choose the right tool for the job. Embrace the flexibility to blend and mix, creating solutions that are more than the sum of their parts.
+
+Remember, the best developers aren't defined by their chosen paradigm, but by their ability to adapt and evolve. So, ditch the dogma, embrace the toolbox, and start writing code that truly shines!
+
+**P.S.** This post is not intended to bash any specific language or paradigm. It's a call for open-mindedness and adaptability in the ever-evolving world of coding. Now, go forth and code with wisdom (and maybe a sprinkle of humor)!
+
+### random counter
+
+<Counter />

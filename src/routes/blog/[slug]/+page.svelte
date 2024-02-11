@@ -17,13 +17,13 @@
 	<!-- <meta property="og:image" content={data.frontmatter.image} /> -->
 </svelte:head>
 
-<article class="max-w-5xl md:pt-10">
-	<hgroup class="mb-14 flex flex-col gap-3">
+<article class="max-w-4xl md:pt-10">
+	<hgroup class="mb-8 flex flex-col gap-3 md:mb-14">
 		<h1 class="text-5xl font-bold md:text-6xl">{data.frontmatter.title}</h1>
 		<p class="text-xl text-muted md:text-2xl">Published on {formatDate(data.frontmatter.date)}</p>
 	</hgroup>
 
-	<div class="prose prose-xl prose-custom min-w-0 md:prose-2xl">
+	<div class="prose prose-xl prose-custom md:prose-2xl">
 		<svelte:component this={component} />
 	</div>
 </article>

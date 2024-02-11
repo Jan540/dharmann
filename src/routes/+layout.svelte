@@ -1,0 +1,18 @@
+<script>
+	import { siteTitle } from '$lib/config';
+	import { ModeWatcher } from 'mode-watcher';
+	import '../app.postcss';
+</script>
+
+<svelte:head>
+	<title>{siteTitle}</title>
+	<meta property="og:description" content="dharmann drinking water" />
+</svelte:head>
+
+<ModeWatcher themeColors={{ dark: 'amongus', light: 'amongus' }} />
+<div
+	class="flex min-h-screen flex-col items-center bg-background
+		text-text selection:bg-black/30 dark:selection:bg-white/30"
+>
+	<slot />
+</div>

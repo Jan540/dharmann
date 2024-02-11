@@ -1,4 +1,6 @@
+import { read } from '$app/server';
 import OgImage from '$lib/components/og-image.svelte';
+import Inter from '$lib/fonts/Inter-Regular.ttf';
 import { Resvg } from '@resvg/resvg-js';
 import satori from 'satori';
 import { html as toReactNode } from 'satori-html';
@@ -8,6 +10,8 @@ import type { RequestHandler } from './$types';
 // export const config = {
 // 	runtime: 'edge'
 // };
+
+const fontData = read(Inter).arrayBuffer();
 
 const height = 882;
 const width = 1686;
@@ -19,17 +23,14 @@ export const GET: RequestHandler = async ({ url }) => {
 	const result = (OgImage as any).render({ title });
 	const element = toReactNode(`${result.html}<style>${result.css.code}</style>`);
 
-	const fontUrl = new URL('../../../lib/fonts/Inter-Regular.ttf', import.meta.url).href;
-
-	console.log(fontUrl);
-
-	const fontData = await fetch(fontUrl).then((res) => res.arrayBuffer());
+	// const fontUrl = new URL('../../../lib/fonts/Inter-Regular.ttf', import.meta.url).href;
+	// const fontData = await fetch(fontUrl).then((res) => res.arrayBuffer());
 
 	const svg = await satori(element, {
 		fonts: [
 			{
 				name: 'Inter',
-				data: fontData,
+				data: await fontData,
 				style: 'normal'
 			}
 		],

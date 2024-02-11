@@ -4,9 +4,10 @@ import satori from 'satori';
 import { html as toReactNode } from 'satori-html';
 import type { RequestHandler } from './$types';
 
-export const config = {
-	runtime: 'edge'
-};
+// TODO: converting the svg to a png does not work in edge
+// export const config = {
+// 	runtime: 'edge'
+// };
 
 const height = 882;
 const width = 1686;

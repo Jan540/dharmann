@@ -13,8 +13,8 @@ import type { RequestHandler } from './$types';
 
 const fontData = read(Inter).arrayBuffer();
 
-const height = 630;
 const width = 1200;
+const height = 630;
 
 export const GET: RequestHandler = async ({ url }) => {
 	const title = url.searchParams.get('title') ?? undefined;

@@ -12,7 +12,7 @@ import type { RequestHandler } from './$types';
 
 const fontData = read(Inter).arrayBuffer();
 
-const height = 620;
+const height = 630;
 const width = 1200;
 
 export const GET: RequestHandler = async ({ url }) => {

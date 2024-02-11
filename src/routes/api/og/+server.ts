@@ -6,9 +6,9 @@ import satori from 'satori';
 import { html as toReactNode } from 'satori-html';
 import type { RequestHandler } from './$types';
 
-export const config = {
-	runtime: 'edge'
-};
+// export const config = {
+// 	runtime: 'edge'
+// };
 
 const fontData = read(Inter).arrayBuffer();
 

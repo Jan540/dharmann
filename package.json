@@ -37,6 +37,9 @@
   },
   "type": "module",
   "dependencies": {
-    "mode-watcher": "^0.2.0"
+    "@resvg/resvg-js": "^2.6.0",
+    "mode-watcher": "^0.2.0",
+    "satori": "^0.10.13",
+    "satori-html": "^0.3.2"
   }
 }

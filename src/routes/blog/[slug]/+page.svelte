@@ -14,7 +14,10 @@
 	<meta property="og:title" content={data.frontmatter.title} />
 	<meta property="og:description" content={data.frontmatter.description} />
 	<meta name="description" content={data.frontmatter.description} />
-	<!-- <meta property="og:image" content={data.frontmatter.image} /> -->
+	<meta
+		property="og:image"
+		content={new URL('api/og?title=' + data.frontmatter.title, 'https://dharmann.at').toString()}
+	/>
 </svelte:head>
 
 <article class="max-w-4xl md:pt-10">

@@ -1,5 +1,5 @@
 ---
-title: The world's smallest PNG
+title: You don't know what you're doing.
 description: This is the description of my cool post.
 date: 2024-01-31
 ---
@@ -32,6 +32,8 @@ console.log('My Cool Wlan!');
 This is the story of my cool wlan.
 
 ## Conclusion
+
+![dharmann](/dharmann-drinking-water.gif)
 
 This is the conclusion of my cool wlan.
 

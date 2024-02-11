@@ -8,7 +8,9 @@ export default {
 				background: 'var(--background)',
 				primary: 'var(--primary)',
 				secondary: 'var(--secondary)',
-				accent: 'var(--accent)'
+				accent: 'var(--accent)',
+				muted: 'var(--muted)',
+				border: 'var(--border)'
 			},
 			// fontSize: {
 			// 	sm: '0.750rem',
@@ -37,15 +39,15 @@ export default {
 						'--tw-prose-bold': theme('colors.primary'),
 						'--tw-prose-counters': theme('colors.text'),
 						'--tw-prose-bullets': theme('colors.text'),
-						'--tw-prose-hr': 'rgb(0 0 0 / 10%)',
+						'--tw-prose-hr': theme('colors.border'),
 						'--tw-prose-quotes': theme('colors.primary'),
 						'--tw-prose-quote-borders': theme('colors.primary'),
 						'--tw-prose-captions': theme('colors.primary'),
 						'--tw-prose-code': theme('colors.primary'),
 						'--tw-prose-pre-code': theme('colors.text'),
-						'--tw-prose-pre-bg': 'rgb(0 0 0 / 10%)',
-						'--tw-prose-th-borders': 'rgb(0 0 0 / 10%)',
-						'--tw-prose-td-borders': 'rgb(0 0 0 / 10%)',
+						'--tw-prose-pre-bg': theme('colors.border'),
+						'--tw-prose-th-borders': theme('colors.border'),
+						'--tw-prose-td-borders': theme('colors.border'),
 
 						'--tw-prose-invert-body': theme('colors.text'),
 						'--tw-prose-invert-headings': theme('colors.text'),
@@ -54,15 +56,15 @@ export default {
 						'--tw-prose-invert-bold': theme('colors.primary'),
 						'--tw-prose-invert-counters': theme('colors.text'),
 						'--tw-prose-invert-bullets': theme('colors.text'),
-						'--tw-prose-invert-hr': 'rgb(255 255 255 / 10%)',
+						'--tw-prose-invert-hr': theme('colors.border'),
 						'--tw-prose-invert-quotes': theme('colors.primary'),
 						'--tw-prose-invert-quote-borders': theme('colors.primary'),
 						'--tw-prose-invert-captions': theme('colors.primary'),
 						'--tw-prose-invert-code': theme('colors.primary'),
 						'--tw-prose-invert-pre-code': theme('colors.text'),
-						'--tw-prose-invert-pre-bg': 'rgb(255 255 255 / 10%)',
-						'--tw-prose-invert-th-borders': 'rgb(255 255 255 / 10%)',
-						'--tw-prose-invert-td-borders': 'rgb(255 255 255 / 10%)'
+						'--tw-prose-invert-pre-bg': theme('colors.border'),
+						'--tw-prose-invert-th-borders': theme('colors.border'),
+						'--tw-prose-invert-td-borders': theme('colors.border')
 					}
 				}
 			})

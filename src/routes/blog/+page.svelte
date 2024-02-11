@@ -11,12 +11,14 @@
 	<meta name="description" content={siteTitle + 'Blog'} />
 </svelte:head>
 
-{#each data.posts as post}
-	<a href={'blog/' + post.slug}>
-		<div>
-			<b>{post.title}</b>
+<div>
+	{#each data.posts as post}
+		<a href={'blog/' + post.slug}>
+			<div>
+				<b>{post.title}</b>
 
-			<p>{formatDate(post.date)}</p>
-		</div>
-	</a>
-{/each}
+				<p>{formatDate(post.date)}</p>
+			</div>
+		</a>
+	{/each}
+</div>

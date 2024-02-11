@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { formatDate } from '$lib/utils';
 	import type { PageData } from './$types';
 
@@ -16,7 +17,7 @@
 	<meta name="description" content={data.frontmatter.description} />
 	<meta
 		property="og:image"
-		content={new URL('api/og?title=' + data.frontmatter.title, 'https://dharmann.at').toString()}
+		content={new URL('api/og?title=' + data.frontmatter.title, $page.url.origin).toString()}
 	/>
 </svelte:head>
 

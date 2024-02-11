@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>{siteTitle}</title>
-	<meta property="og:description" content="dharmann drinking water" />
+	<!-- <meta property="og:description" content="dharmann drinking water" /> -->
 </svelte:head>
 
 <ModeWatcher themeColors={{ dark: 'amongus', light: 'amongus' }} />

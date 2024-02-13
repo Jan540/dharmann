@@ -10,9 +10,4 @@
 </svelte:head>
 
 <ModeWatcher themeColors={{ dark: 'amongus', light: 'amongus' }} />
-<div
-	class="flex min-h-screen flex-col items-center bg-background
-		text-text selection:bg-black/30 dark:selection:bg-white/30"
->
-	<slot />
-</div>
+<slot />

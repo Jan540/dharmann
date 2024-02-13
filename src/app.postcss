@@ -28,4 +28,18 @@ https://www.realtimecolors.com/blog-post?colors=0f0d11-f8f5fa-50266d-ae71e0-8417
 		--muted: rgba(255, 255, 255, 0.3);
 		--border: rgba(255, 255, 255, 0.1);
 	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		align-items: center;
+		background-color: var(--background);
+		color: var(--text);
+		transition:
+			background-color 0.2s,
+			color 0.2s;
+
+		@apply selection:bg-black/30 dark:selection:bg-white/30;
+	}
 }

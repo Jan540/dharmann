@@ -16,7 +16,7 @@
 	<meta name="description" content={data.frontmatter.description} />
 	<meta
 		property="og:image"
-		content={new URL('api/og?title=' + data.frontmatter.title, 'http://dharmann.at').toString()}
+		content={new URL('api/og?title=' + data.frontmatter.title, 'https://dharmann.at').toString()}
 	/>
 </svelte:head>
 

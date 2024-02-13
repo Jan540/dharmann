@@ -39,6 +39,7 @@
   "type": "module",
   "dependencies": {
     "@resvg/resvg-js": "^2.6.0",
+    "@vercel/speed-insights": "^1.0.9",
     "lucide-svelte": "^0.324.0",
     "mode-watcher": "^0.2.0",
     "satori": "^0.10.13",

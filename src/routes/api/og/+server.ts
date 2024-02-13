@@ -1,6 +1,6 @@
 import { read } from '$app/server';
 import OgImage from '$lib/components/og-image.svelte';
-import Inter from '$lib/fonts/Inter-Regular.ttf';
+import Inter from '$lib/fonts/Inter-Bold.ttf';
 import { Resvg } from '@resvg/resvg-js';
 import satori from 'satori';
 import { html as toReactNode } from 'satori-html';

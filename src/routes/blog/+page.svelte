@@ -14,7 +14,7 @@
 <div>
 	{#each data.posts as post}
 		<a href={'blog/' + post.slug}>
-			<div>
+			<div class="rounded-lg p-2 hover:bg-border">
 				<b>{post.title}</b>
 
 				<p>{formatDate(post.date)}</p>

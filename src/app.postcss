@@ -10,7 +10,8 @@ https://www.realtimecolors.com/blog-post?colors=0f0d11-f8f5fa-50266d-ae71e0-8417
 */
 
 @layer base {
-	:root {
+	/* --- PURPLE --- */
+	/* :root {
 		--text: #0f0d11;
 		--background: #f8f5fa;
 		--primary: #50266d;
@@ -27,6 +28,25 @@ https://www.realtimecolors.com/blog-post?colors=0f0d11-f8f5fa-50266d-ae71e0-8417
 		--accent: #8f21e8;
 		--muted: rgba(255, 255, 255, 0.3);
 		--border: rgba(255, 255, 255, 0.1);
+	} */
+
+	:root {
+		--text: #12060e;
+		--background: #fefbfd;
+		--primary: #be4793;
+		--secondary: #dbcf9a;
+		--accent: #bdd07a;
+		--muted: rgba(0, 0, 0, 0.3);
+		--border: rgba(0, 0, 0, 0.1);
+	}
+	.dark {
+		--text: #f9ecf4;
+		--background: #040103;
+		--primary: #b9418d;
+		--secondary: #655924;
+		--accent: #72842e;
+		--muted: rgba(255, 255, 255, 0.3);
+		--border: rgba(255, 255, 255, 0.1);
 	}
 
 	body {
@@ -40,6 +60,50 @@ https://www.realtimecolors.com/blog-post?colors=0f0d11-f8f5fa-50266d-ae71e0-8417
 			background-color 0.2s,
 			color 0.2s;
 
-		@apply selection:bg-black/30 dark:selection:bg-white/30;
+		@apply selection:bg-muted;
+	}
+
+	/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+	@font-face {
+		font-family: 'Satoshi-Variable';
+		src:
+			url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+			url('/fonts/Satoshi-Variable.woff') format('woff'),
+			url('/fonts/Satoshi-Variable.ttf') format('truetype');
+		font-weight: 300 900;
+		font-display: swap;
+		font-style: normal;
+	}
+
+	/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+	@font-face {
+		font-family: 'Satoshi-VariableItalic';
+		src:
+			url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+			url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+			url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+		font-weight: 300 900;
+		font-display: swap;
+		font-style: italic;
 	}
 }

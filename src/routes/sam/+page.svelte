@@ -5,7 +5,7 @@
 	/>
 	<title>Dharmann drinking water</title>
 	<meta property="og:description" content="Sam Lake" />
-	<meta property="og:image" content="sam-lake.gif" />
+	<meta property="og:image" content="https://dharmann.at/sam-lake.gif" />
 </svelte:head>
 
 <img src="sam-lake.gif" alt="sam lake" class="h-screen w-screen object-cover" />

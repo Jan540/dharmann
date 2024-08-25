@@ -5,7 +5,7 @@
 	/>
 	<title>Dharmann drinking water</title>
 	<meta property="og:description" content="Dharmann drinking water" />
-	<meta property="og:image" content="dharmann-drinking-water.gif" />
+	<meta property="og:image" content="https://dharmann.at/dharmann-drinking-water.gif" />
 </svelte:head>
 
 <img

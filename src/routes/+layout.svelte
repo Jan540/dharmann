@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { siteTitle } from '$lib/config';
 	import { ModeWatcher } from 'mode-watcher';
 	import '../app.postcss';
